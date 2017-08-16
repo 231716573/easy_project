@@ -1,0 +1,102 @@
+
+#top { background: url(../images/top.jpg) center top no-repeat; height: 675px; width: 100%; overflow: hidden;}
+
+#contain { 
+	width: 900px; margin:0px auto;
+}
+#contain .no1_div2 {
+	margin-left: 412px;
+}
+#contain .no2_div2 {
+	margin-left: 32px;
+}
+#contain h2 p {
+	padding-left:75px;
+	font-weight: bold;
+}
+#contain .no1_div2 h2 p{
+	background: url(../images/no1.png) 15px center no-repeat;
+}
+#contain .no2_div2 h2 p{
+	background: url(../images/no2.png) 15px center no-repeat;
+}
+#contain .no2_div1 {
+	margin-right: 50px;
+}
+
+#contain .nodiv {
+	padding-top: 40px;
+}
+#contain .nodiv h2 {
+	height:40px;
+	line-height: 40px;
+	background: url(../images/h2_bg.png) 0px bottom no-repeat;
+}
+#contain .nodiv .nodiv_content {
+	line-height: 25px;
+	padding-left: 10px;
+	width: 370px;
+	color:#464646;
+	margin: 15px 0px;
+}
+#contain .nodiv a {
+	display: inline-block;
+	padding-left: 22px;
+	margin-left: 10px;
+	width: 88px;
+	height: 38px;
+	line-height: 38px;
+	background: #0a0706 url(../images/nodiv_a.png) 87px center no-repeat;
+	color: #f61423;
+	-webkit-border-radius:4px;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+}
+#contain .list .nodiv a {
+	margin-left: 15px;
+}
+#contain .list{
+	padding-bottom: 100px;
+}
+#contain .list_div {
+	float: left;
+	margin:30px 20px;
+}
+#contain .list_div_img {
+	width: 396px;
+	height: 315px;
+	overflow: hidden;
+	background: url(../images/imgbg.png) 0px 0px no-repeat;
+}
+#contain .list_div_img img{
+	width: 358px;
+	height: 270px;
+	margin-top: 24px;
+	margin-left: 20px;
+	overflow: hidden;
+}
+#contain .list .nodiv{
+	padding-top:0px;
+}
+
+#contain .list .nodiv_content{
+	margin-top:5px;
+	font-size: 12px;
+	line-height: 21px;
+}
+.list_div .nodiv{
+	padding-left: 10px;
+}
+
+.list_div3 h2 p { 
+	background: url(../images/no3.png) 15px center no-repeat;
+}
+.list_div4 h2 p { 
+	background: url(../images/no4.png) 15px center no-repeat;
+}
+.list_div5 h2 p { 
+	background: url(../images/no5.png) 15px center no-repeat;
+}
+.list_div6 h2 p { 
+	background: url(../images/no6.png) 15px center no-repeat;
+}

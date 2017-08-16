@@ -1,0 +1,57 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,figcaption,figure,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+h1{font-size:18px;font-weight:normal}
+h2{font-size:14px;font-weight:normal}
+h3{font-size:14px;font-weight:normal}
+h4,h5,h6{font-size:100%;font-weight:normal}
+i { font-style: normal; }
+ul,ol,li{list-style:none}
+a{text-decoration:none}
+abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}
+q:before,q:after{content:''}
+legend{color:#000}
+fieldset,img{border:0}
+hr{border:0;height:1px}
+body>iframe{display:none !important;}
+*{-ms-word-break:break-all;word-break:break-all;-ms-word-wrap:break-word;word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+html {
+    font-family: "Microsoft YaHei", "微软雅黑",'sans-serif',  "Helvetica";
+    font-size: 12px;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #333;
+}
+input,textarea:focus { outline: none; }
+input {-webkit-appearance:none;}
+/*重置结束*/
+
+/*内容*/
+header { background-color: #41acf2; width: 100%; height: 250px; font-size: 15px; color:#fff; text-align: center; }
+header h2 { font-size: 23px; padding:50px 0px 20px; }
+header p { padding:3px 0px; width:107px; margin:0px auto; text-align: left; }
+header a { margin-top: 6px; margin-left: -2px; box-sizing:border-box; -webkit-box-sizing:border-box; width: 90px; height: 28px; text-align: center; display: inline-block; line-height: 27px; border-radius: 15px; -webkit-border-radius:15px; border:1px solid #fff; color: #fff; }
+
+#recharge { margin:0px 10px; }
+#recharge .recharge_title { font-size: 12px; color: #666; margin:20px 0px 13px; }
+#recharge ul  { height: 100px; width:100%;}
+#recharge ul li { float: left; overflow: hidden; box-sizing:border-box; -webkit-box-sizing:border-box; width:47%; margin-right:6%; text-align: center; padding-top:20px; height:80px; border:1px solid #e5e5e5; border-radius: 5px; -webkit-border-radius:5px;}
+#recharge ul li:last-child { margin-right: 0px; }
+#recharge ul .clickActive { position: relative; border:1px solid #f46221 !important; }
+#recharge ul .clickActive:before { position: absolute; display: block; content: " ";  right:-5px; bottom:-20px; transform:rotate(45deg); -webkit-transform:rotate(45deg); border-top:30px solid transparent; border-bottom:30px solid transparent; border-left:30px solid #f46221; }
+#recharge ul .clickActive:after { position: absolute; display: block; content: " "; width:11px; height:5px; transform:rotate(-45deg); -webkit-transform:rotate(-45deg); right:5px; bottom:13px; border-left:1px solid #fff; border-bottom:1px solid #fff; }
+#recharge ul .clickActive p:first-child { color: #f46221 !important; }
+#recharge ul li p:first-child { color: #000; font-size: 17px; }
+#recharge ul li p:last-child { color: #999; font-size: 12px; }
+#recharge a { display: block; width:100% ; height: 44px; line-height: 44px; background-color: #f46221; text-align: center; color: #fff; font-size: 14px; border-radius: 5px; -webkit-border-radius:5px; }
+
+/*支付成功*/
+#paySuccess { width:100%; position: fixed; }
+#paySuccess .paySuccess { width:100%; height:200px; position: fixed; top: 270px; margin: 0px; z-index: 999; text-align: center; }
+#paySuccess .paySuccess .paySuccess_school { font-size: 18px; color: #fff; margin:50px 0px 35px; }
+#paySuccess .paySuccess .paySuccess_contain { width:100%; height:200px; padding-top: 30px; background-color: #fff;}
+#paySuccess .paySuccess .paySuccess_contain p { line-height: 50px; }
+#paySuccess .paySuccess .paySuccess_contain .paySuccess_p1 { color: #666; font-size: 14px; }
+#paySuccess .paySuccess .paySuccess_contain .paySuccess_p2 { color: #000; font-size: 30px; margin-bottom: 40px; }
+#paySuccess .paySuccess .paySuccess_contain .paySuccess_p3 { font-size: 18px; color: #fff; width: 150px; margin:0px auto; height:50px; line-height: 50px; background-color: #06bf04; font-size: 18px;border-radius: 5px; -webkit-border-radius:5px; }
+

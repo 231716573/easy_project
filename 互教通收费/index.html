@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="wap-font-scale" content="no">
+	<title>互教通收费</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body style="max-width:700px !important;margin:0px auto;">
+<header>
+	<h2 id="header_h2">广州市海珠区去玩了第一中学</h2>
+	<div>
+		<p class="head_explain">费用说明：</p>
+		<p class="head_contain">家校沟通平台信息服务家校沟通平台信息服务费，家家校沟通平台信息服务费，家家校沟通平台信息服务费，家费，家校沟通平台信息服务费，家校沟通平台信息服务费，家校沟通平台信息服务费，家校沟通平台信息服务费，家校沟通平台信息服务费，家校沟通平台信息服务费。</p>
+	</div>
+</header>
+<div id="charge">
+	<p class="head_explain">具体费用：</p>
+	<ul>
+		<li>
+			<p>一年服务费<span><i>¥</i>100.00</span></p>
+		</li>
+	</ul>
+</div>
+<div id="login">
+	<div>
+		<p>学生姓名</p>
+		<input type="text" id="studentname" placeholder="请输入学生的真实姓名">
+	</div>
+	<div>
+		<p>家长联系电话</p>
+		<input type="text" id="phone" placeholder="请输入家长的联系电话">
+	</div>
+</div>
+<footer>
+	<input type="button" id="btn" value="确认支付">
+</footer>
+<div id="prompt" style="display:none;">
+	<div class="prompt_bg"></div>
+	<div class="prompt_contain">
+		<p>提示：</p>
+		<div id="prompt_phone">请正确输入联系号码</div>
+		<div id="prompt_name" style="display:none;">请正确输入学生姓名</div>
+		<a id="prompt_sure">确认</a>
+	</div>
+</div>
+
+<!-- 支付成功 -->
+<div id="paySuccess">
+	<div class="paySuccess_bg"></div>
+	<div class="paySuccess">
+		<div class="paySuccess_school" id="paySuccess_school">完成完成完成完成完成完成</div>
+		<div class="paySuccess_contain">
+			<p class="paySuccess_p1" id="paySuccess_p1"><span id="paysuccess_time">2016-08-05 15:00</span> 消费成功</p>
+			<p class="paySuccess_p2" id="paySuccess_p2">¥<span>100.00</span></p>
+			<p class="paySuccess_p3" id="paySuccess_p3">完成</p>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+window.onload=function (){
+	var btnInput = document.getElementById("btn"),
+	name = document.getElementById("studentname"),
+	phone = document.getElementById("phone"),
+	prompt = document.getElementById("prompt"),
+	promptPhone = document.getElementById("prompt_phone"),
+	promptName = document.getElementById("prompt_name"),
+	promptSure = document.getElementById("prompt_sure");
+
+	var regPhone = /^1[3|4|5|7|8]\d{9}$/;
+
+	btnInput.onclick=function (){
+
+		if( name.value == "" ){
+			prompt.style.display = "block";
+			promptName.style.display = "block";
+			promptPhone.style.display = "none";
+		}
+
+		// console.log(regPhone.test(phone.value))
+		if( phone.value == "" || !(regPhone.test(phone.value)) ){
+			prompt.style.display = "block";
+			promptName.style.display = "none";
+			promptPhone.style.display = "block";
+		}
+	}
+
+	promptSure.onclick=function (){
+		prompt.style.display = "none";
+	}
+
+	document.getElementById("paySuccess_school").innerHTML = document.getElementById("header_h2").innerHTML;
+	document.getElementById("paySuccess_p3").onclick=function (){
+		// document.getElementById("paySuccess").style.display = "none";
+		paysuccessTime();
+		window.close();
+	}
+}
+
+function zero(s){
+	if(parseInt(s)<10){
+		return '0'+s;
+	}else{
+		return s;
+	}
+}
+
+function paysuccessTime(){
+
+	var newDate = new Date();
+
+	var paysuccess_time = "";
+	paysuccess_time = newDate.getFullYear() + "-" + zero(parseInt(newDate.getMonth())+1) + "-" + zero(newDate.getDate()) + " " + zero(newDate.getHours()) + ":" + zero(newDate.getMinutes());
+
+	document.getElementById("paysuccess_time").innerHTML = paysuccess_time;
+
+}
+</script>
+</html>

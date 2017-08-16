@@ -1,0 +1,91 @@
+header{
+	width: 100%;
+}
+header img{
+	width: 100%;
+	display: block;
+}
+
+#contain {
+	margin:10px;
+}
+#contain h2{
+	padding-bottom: 10px;
+	background: url(../images/imgbg.png) center bottom no-repeat;
+	-webkit-background-size: 80% 2px;
+	background-size: 80% 2px;
+	text-align: center;
+}
+#contain h2 p {
+	display: inline-block;
+	padding-left: 45px;
+	font-weight: bold;
+}
+
+#contain .actdiv1 h2 p {
+	background: url(../images/no1.png) 0px center no-repeat;
+	-webkit-background-size: 35px 12px;
+	background-size: 35px 12px;
+}
+#contain .actdiv2 h2 p {
+	background: url(../images/no2.png) 0px center no-repeat;
+	-webkit-background-size: 40px 12px;
+	background-size: 40px 12px;
+}
+#contain .actdiv3 h2 p {
+	background: url(../images/no3.png) 0px center no-repeat;
+	-webkit-background-size: 39px 12px;
+	background-size: 39px 12px;
+}
+#contain .actdiv4 h2 p {
+	background: url(../images/no4.png) 0px center no-repeat;
+	-webkit-background-size: 39px 12px;
+	background-size: 39px 12px;
+}
+#contain .actdiv5 h2 p {
+	background: url(../images/no5.png) 0px center no-repeat;
+	-webkit-background-size: 39px 12px;
+	background-size: 39px 12px;
+}
+#contain .actdiv6 h2 p {
+	background: url(../images/no6.png) 0px center no-repeat;
+	-webkit-background-size: 39px 12px;
+	background-size: 39px 12px;
+}
+
+
+.actdiv .actdiv_content {
+	display: flex;
+	margin:20px 0px 40px;
+}
+.actdiv_content .actdiv_content1 {
+	flex:1;
+	-webkit-flex:1;
+}
+.actdiv_content .actdiv_content1 img{
+	width:100%;
+}
+.actdiv_content .actdiv_content2 {
+	flex:1;
+	-webkit-flex:1;
+	margin-left: 10px;
+}
+
+.actdiv_content .actdiv_content2 p{
+	color: #464646;
+	font-size: 12px;
+	line-height: 19px;
+}
+
+.actdiv_content a {
+	display: inline-block;
+	padding-left: 22px;
+	margin-top: 10px;
+	width: 90px;
+	height: 38px;
+	line-height: 38px;
+	background: #0a0706 url(../images/nodiv_a.png) 87px center no-repeat;
+	color: #f61423;
+	-webkit-border-radius:3px;
+	border-radius: 3px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="wap-font-scale" content="no">
+	<title>充值</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body style="max-width:700px !important;margin:0px auto;">
+<header>
+	<h2>完成完成完成完成完成完成</h2>
+	<p>姓名：完成完成</p>
+	<p>账号：899999</p>
+	<a href="javascript:void(0);">切换账号</a>
+</header>
+<div id="recharge">
+	<p class="recharge_title">充值金额</p>
+	<ul class="recharge_ul" id="recharge_ul">
+		<li id="recharge_li1" class="clickActive">
+			<p>55元</p>
+			<p>半年</p>
+		</li>
+		<li id="recharge_li2">
+			<p>100元</p>
+			<p>一年</p>
+		</li>
+	</ul>
+	<a href="javascript:void(0);" id="recharge_sure">立即充值</a>
+</div>
+
+
+<!-- 支付成功 -->
+<div id="paySuccess" style="display:none;">
+	<div class="paySuccess">
+		<div class="paySuccess_contain">
+			<p class="paySuccess_p1" id="paySuccess_p1"><span id="paysuccess_time">2016-08-05 15:00</span> 消费成功</p>
+			<p class="paySuccess_p2" id="paySuccess_p2">¥<span>100.00</span></p>
+			<p class="paySuccess_p3" id="paySuccess_p3">完成</p>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+
+var EventUtil = {
+
+	getEvent : function(event){
+		return event ? event : window.event;
+	},
+	getTarget: function(event){
+		return event.target || event.srcElement;
+	}
+
+}
+window.onload=function (){
+	
+	var rechargeLi1 = document.getElementById("recharge_li1");
+	var rechargeLi2 = document.getElementById("recharge_li2");
+
+	rechargeLi1.onclick=function (){
+
+		document.getElementById("recharge_li1").className="clickActive";
+		document.getElementById("recharge_li2").className="";
+
+	}
+	rechargeLi2.onclick=function (){
+
+		document.getElementById("recharge_li1").className="";
+		document.getElementById("recharge_li2").className="clickActive";
+
+	}
+
+	document.getElementById("paySuccess_p3").onclick=function(){
+		document.getElementById("paySuccess").style.display="none";
+	}
+	document.getElementById("recharge_sure").onclick=function(){
+		document.getElementById("paySuccess").style.display="block";
+
+	}
+}
+
+function zero(s){
+	if(parseInt(s)<10){
+		return '0'+s;
+	}else{
+		return s;
+	}
+}
+
+function paysuccessTime(){
+
+	var newDate = new Date();
+
+	var paysuccess_time = "";
+	paysuccess_time = newDate.getFullYear() + "-" + zero(parseInt(newDate.getMonth())+1) + "-" + zero(newDate.getDate()) + " " + zero(newDate.getHours()) + ":" + zero(newDate.getMinutes());
+
+	document.getElementById("paysuccess_time").innerHTML = paysuccess_time;
+
+}
+</script>
+</html>

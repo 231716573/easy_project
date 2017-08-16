@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="wap-font-scale" content="no">
+	<title>中秋节</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/zhongqiu.css">
+</head>
+<body style="max-width:700px !important;margin:0px auto;">
+<header>
+	<img src="images/top1.jpg" /><img src="images/top2.jpg" /><img src="images/top3.jpg" /><img src="images/top4.jpg" /><img src="images/top5.jpg" />
+</header>
+<div id="contain">
+	<div>
+		<span><img src="images/neirong1.jpg" alt=""></span>
+		<h2>跟顶级老师一起探索极速还原魔方的奥秘！</h2>
+		<p><i>¥</i>35/组家庭</p>
+		<a href="javascript:void(0)">我要报名</a>
+	</div>
+	<div>
+		<span><img src="images/neirong2.jpg" alt=""></span>
+		<h2>做一盒自己DIY的月饼带回家，体验不一样的中秋！</h2>
+		<p><i>¥</i>178/人</p>
+		<a href="javascript:void(0)">我要报名</a>
+	</div>
+	<div>
+		<span><img src="images/neirong3.jpg" alt=""></span>
+		<h2>快乐儿童，畅“油”健康</h2>
+		<p><i>¥</i>5/人</p>
+		<a href="javascript:void(0)">我要报名</a>
+	</div>
+	<div>
+		<span><img src="images/neirong4.jpg" alt=""></span>
+		<h2>中秋佳节变变变，神奇魔术带回家</h2>
+		<p><i>¥</i>35/组家庭</p>
+		<a href="javascript:void(0)">我要报名</a>
+	</div>
+</div>
+<footer>
+	<div>精彩活动推荐</div>
+	<a href="javascript:void(0);"><img src="images/growup.jpg" alt="成长之路"></a>
+</footer>
+</body>
+<script type="text/javascript">
+window.onload=function (){
+	var contain = document.getElementById("contain");
+	var containDiv = contain.getElementsByTagName('span');
+
+	for (var i = 0; i < containDiv.length; i++) {
+		containDiv[i].style.height = parseFloat(containDiv[i].offsetWidth)*5/4 + "px";
+
+	};
+}
+</script>
+</html>

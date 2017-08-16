@@ -1,0 +1,209 @@
+header img{
+	width:100%;
+	height:auto;
+	display: block;
+}
+#top1 {
+	background-color:#fde36a;
+}
+#top1 h2,#top2 h2{
+	padding-top: 10px;
+	text-align: center;
+	font-size: 1.167rem;
+	color: #37321d;
+}
+#top1 .top1_contain,#top2 .top2_contain{
+	background: url(../images/flowerbg.png) center center no-repeat;
+	background-size: 100% 100%;
+	margin:10px;
+	padding:15px 10px 30px;
+}
+#top2 .top2_contain{
+	background: url(../images/flowerbg2.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+#top1 .top1_contain div,#top2 .top2_contain div{
+	display: inline-block;
+	padding: 5px;
+	background-color: #6eb9f9;
+	color:#fff;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	font-size: 1.167rem;
+}
+#top1 .top1_contain p,#top2 .top2_contain p{
+	font-size: 1.08rem;
+	line-height: 1.5;
+	margin:5px 0px 10px;
+	word-break:break-all;
+　　word-wrap:break-word;
+}
+#top1 .top1_contain li,#top2 .top2_contain li{
+	float: left; 
+	color:#999;
+	padding-left: 12px;
+	padding-right:12px;
+	border-right: 1px solid #999;
+}
+#top1 .top1_contain li:first-child,#top2 .top2_contain li:first-child{
+	padding-left:0px;
+}
+#top1 .top1_contain li:last-child,#top2 .top2_contain li:last-child{
+	padding-right:0px;
+	border-right: none;
+}
+#top1 .top1_bottom,#top2 .top2_bottom{
+	padding-top:20px;
+}
+#top1 .top1_bottom .top1_bottom_div,#top2 .top2_bottom .top2_bottom_div{
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #ff914e;
+	color:#000;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	font-size: 1.167rem;
+	border:1px solid #000;
+	margin-left: 10px;
+}
+#top1 .top1_iwanin {
+	margin:10px 10px 0px 10px;
+	padding:20px 0px 30px;
+}
+#top1 .top1_iwanin a{
+	width:100%;
+	display: block;
+}
+#top1 .top1_iwanin a img{
+	width:100%;
+	height:auto;
+}
+#top1 .top1_bottom ul{
+	margin: 10px;
+	padding:26px 23px;
+	background-color: #fff;
+}
+#top1 .top1_bottom ul li div:last-child {
+	display: inline-block;
+	padding-left: 20px;
+	border-left: 1px dotted #a6a19a;
+	height:40px;
+	line-height:16px;
+	color: #737373;
+	margin-top: 5px;
+	margin-left: 12px;
+}
+#top1 .top1_bottom ul li:last-child div:last-child{
+	border:none;
+}
+#top1 .top1_bottom ul li div p:first-child{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	background-color: #ff914e;
+	border:1px solid black;
+	line-height: 23px;
+	text-align: center;
+	font-size: 1.167rem;
+	color: #000;
+}
+#top1 .top1_bottom ul li div p:last-child{
+	display: inline-block;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	font-size: 1.167rem;
+	color: #000;
+	margin-left: 5px;
+	word-break:break-all;
+　　word-wrap:break-word;
+}
+
+/*第二站*/
+#top2{
+	background:#7dc9fe;
+	padding-top: 17px;
+}
+#top2_img {
+	width:100%;
+	overflow: hidden;
+}
+#top2_img img{
+	width: 100%;
+	height:auto;
+}
+#top2 .top2_bottom .top2_bottom_div{
+	background-color: #ffe04e;
+}
+#top2 .top2_bottom .top2_bottom_div2{
+	position: relative;
+	margin: 0px 10px;
+	padding: 20px 0px 35px;
+}
+#top2 .top2_bottom .top2_bottom_div2 p {
+	width: 100%;
+	height:88px;
+	background-color: #fff;
+	opacity: 0.2;
+}
+#top2 .top2_bottom .top2_bottom_div2 div {
+	text-align: center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top: -20px;
+	margin-left: -40px;
+	font-size: 18px;
+}
+#top2 #top3_contain{
+	background: url(../images/flowerbg3.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+#top2 #top4_contain{
+	background: url(../images/flowerbg4.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+#top2 .top3_bottom .top2_bottom_div{
+	background-color: #76f240;
+}
+#top2 .top4_bottom .top2_bottom_div{
+	background-color: #f54b77;
+}
+
+
+/*自适应调整*/
+@media only screen and (max-width:320px) {
+	#top1 .top1_contain li{
+		padding-left: 3px;
+		padding-right:3px;
+	}
+	#top2 .top2_contain li:last-child{
+		padding-right:0px;
+		padding-left: 0px;
+	}
+	#top2 .top2_contain{
+		padding-bottom: 45px;
+	}
+}
+@media screen and (min-width:321px) and (max-width:410px) {
+	#top2 #top3_contain li,#top2 #top4_contain li{
+		padding-left: 1px;
+		padding-right:1px;
+	}
+	#top2 #top4_contain li:first-child{
+		padding-left:0px;
+	}
+	#top2 #top3_contain li:last-child,#top2 #top4_contain li:last-child{
+		padding-right:0px;
+		border-right: none;
+	}
+	#top2 .top2_contain li{
+		padding-left: 3px;
+		padding-right:3px;
+	}
+/*	#top2 .top2_contain{
+		padding-bottom: 45px;
+	}*/
+}
